@@ -1,4 +1,4 @@
-mermaid
+```mermaid
 flowchart LR
 
 A[Available Cylinder]
@@ -12,7 +12,7 @@ D --> E[Refilling Process]
 
 E --> F[Returned From Filler]
 
-F --> A
+F --> A```
 
 \# Workflows
 
@@ -116,7 +116,7 @@ Secure Storage
 
 Restore When Needed
 
-mermaid
+```mermaid
 flowchart TD
 
 A[Customer]
@@ -132,3 +132,4 @@ C --> E[Deposit Records]
 D --> F[Analytics]
 
 E --> F
+```

@@ -1,4 +1,4 @@
-mermaid
+```mermaid
 flowchart TD
 
     U[User]
@@ -21,7 +21,7 @@ flowchart TD
     DB --> BK
 
     RP --> U
-
+```
 \# System Architecture
 
 
@@ -159,7 +159,7 @@ Stores:
 
 \- Deposits
 
-mermaid
+```mermaid
 flowchart LR
 
 A[Available Cylinder]
@@ -174,3 +174,33 @@ D --> E[Refilling Process]
 E --> F[Returned From Filler]
 
 F --> A
+```
+
+```mermaid
+flowchart TD
+
+UserAction
+
+UserAction --> CheckCustomerID
+UserAction --> CheckCylinderID
+UserAction --> CheckStatus
+UserAction --> CheckInvoice
+
+CheckCustomerID --> Valid
+
+CheckCylinderID --> Valid
+
+CheckStatus --> Valid
+
+CheckInvoice --> Valid
+
+Valid --> SaveData
+
+CheckCustomerID --> Error
+
+CheckCylinderID --> Error
+
+CheckStatus --> Error
+
+CheckInvoice --> Error
+```

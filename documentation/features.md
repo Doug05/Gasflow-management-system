@@ -18,7 +18,7 @@
 
 \- Cylinder History
 
-mermaid
+```mermaid
 flowchart TD
 
 A[Customer]
@@ -34,7 +34,7 @@ D --> E[Receive Payment]
 E --> F[Update Records]
 
 F --> G[Reports]
-
+```
 
 \## Customer Management
 
@@ -76,7 +76,7 @@ F --> G[Reports]
 
 \- Outstanding Balance Monitoring
 
-mermaid
+```mermaid
 flowchart TD
 
 A[New Cylinder]
@@ -92,7 +92,7 @@ D --> E[Returned]
 E --> F[Refilling]
 
 F --> C
-
+```
 
 \## Dashboard
 
@@ -124,7 +124,7 @@ F --> C
 
 \- Power BI Integration
 
-mermaid
+```mermaid
 flowchart TD
 
 A[Customer Transaction]
@@ -138,7 +138,7 @@ C --> D[Final Bill]
 D --> E[Payment Tracking]
 
 E --> F[Invoice History]
-
+```
 
 \## Backup
 
