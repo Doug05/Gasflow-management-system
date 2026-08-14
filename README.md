@@ -3,6 +3,32 @@
 GasFlow is a desktop-based Gas Agency Management System that was a project made for one of my clients which streamlines cylinder inventory, customer records, billing, payments, deposits, and refilling workflows. It provides real-time tracking, analytics, invoice generation, Excel/CSV exports, and Google Drive backup, helping agencies replace manual processes with a user-friendly solution.
 
 
+mermaid
+mindmap
+  root((GasFlow))
+    Inventory
+    Customers
+    Billing
+    Payments
+    Deposits
+    Transactions
+    Reports
+    Analytics
+    Backup
+    Deployment
+
+mermaid
+flowchart LR
+
+Problem
+--> Requirements
+--> Design
+--> Prototype
+--> Development
+--> Testing
+--> Deployment
+--> Feedback
+--> Improvement
 
 \## Core Modules
 
@@ -50,3 +76,14 @@ GasFlow is a desktop-based Gas Agency Management System that was a project made 
 
 Detailed project documentation is available in the `/documentation` folder.
 
+Backup Architecture:
+mermaid
+flowchart LR
+
+Database --> BackupManager
+
+BackupManager --> GoogleDrive
+
+GoogleDrive --> Restore
+
+Restore --> Database

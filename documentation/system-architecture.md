@@ -1,3 +1,27 @@
+mermaid
+flowchart TD
+
+    U[User]
+
+    UI[User Interface]
+    DB[(Database)]
+
+    BL[Business Logic]
+    VR[Validation Rules]
+
+    RP[Reports & Analytics]
+    BK[Google Drive Backup]
+
+    U --> UI
+    UI --> BL
+    BL --> VR
+    VR --> DB
+
+    DB --> RP
+    DB --> BK
+
+    RP --> U
+
 \# System Architecture
 
 
@@ -80,7 +104,22 @@ Responsible for:
 
 \- Payment processing
 
+mermaid
+flowchart TD
 
+A[Customer]
+
+A --> B[Request Cylinder]
+
+B --> C[Assign Cylinder]
+
+C --> D[Generate Invoice]
+
+D --> E[Receive Payment]
+
+E --> F[Update Records]
+
+F --> G[Reports]
 
 \## Validation Layer
 
@@ -120,3 +159,18 @@ Stores:
 
 \- Deposits
 
+mermaid
+flowchart LR
+
+A[Available Cylinder]
+--> B[Assigned To Customer]
+
+B --> C[Returned By Customer]
+
+C --> D[Sent For Refilling]
+
+D --> E[Refilling Process]
+
+E --> F[Returned From Filler]
+
+F --> A

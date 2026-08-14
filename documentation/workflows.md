@@ -1,3 +1,19 @@
+mermaid
+flowchart LR
+
+A[Available Cylinder]
+--> B[Assigned To Customer]
+
+B --> C[Returned By Customer]
+
+C --> D[Sent For Refilling]
+
+D --> E[Refilling Process]
+
+E --> F[Returned From Filler]
+
+F --> A
+
 \# Workflows
 
 
@@ -100,3 +116,19 @@ Secure Storage
 
 Restore When Needed
 
+mermaid
+flowchart TD
+
+A[Customer]
+
+A --> B[Payment]
+
+A --> C[Deposit]
+
+B --> D[Payment Records]
+
+C --> E[Deposit Records]
+
+D --> F[Analytics]
+
+E --> F

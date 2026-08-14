@@ -64,3 +64,21 @@ GasFlow provides a structured digital workflow that allows agencies to manage th
 
 \- Protect business data through backups
 
+mermaid
+flowchart LR
+
+Customers --> Reports
+
+Inventory --> Reports
+
+Transactions --> Reports
+
+Billing --> Reports
+
+Payments --> Reports
+
+Reports --> Excel
+
+Reports --> CSV
+
+Reports --> PowerBI

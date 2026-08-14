@@ -18,6 +18,22 @@
 
 \- Cylinder History
 
+mermaid
+flowchart TD
+
+A[Customer]
+
+A --> B[Request Cylinder]
+
+B --> C[Assign Cylinder]
+
+C --> D[Generate Invoice]
+
+D --> E[Receive Payment]
+
+E --> F[Update Records]
+
+F --> G[Reports]
 
 
 \## Customer Management
@@ -60,6 +76,22 @@
 
 \- Outstanding Balance Monitoring
 
+mermaid
+flowchart TD
+
+A[New Cylinder]
+
+A --> B[Inventory]
+
+B --> C[Available]
+
+C --> D[Assigned]
+
+D --> E[Returned]
+
+E --> F[Refilling]
+
+F --> C
 
 
 \## Dashboard
@@ -92,6 +124,20 @@
 
 \- Power BI Integration
 
+mermaid
+flowchart TD
+
+A[Customer Transaction]
+
+A --> B[Generate Invoice]
+
+B --> C[GST Calculation]
+
+C --> D[Final Bill]
+
+D --> E[Payment Tracking]
+
+E --> F[Invoice History]
 
 
 \## Backup
