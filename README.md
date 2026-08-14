@@ -18,20 +18,6 @@ mindmap
     Deployment
 ```
 
-```
-mermaid
-flowchart LR
-
-Problem
---> Requirements
---> Design
---> Prototype
---> Development
---> Testing
---> Deployment
---> Feedback
---> Improvement
-```
 
 \## Core Modules
 
