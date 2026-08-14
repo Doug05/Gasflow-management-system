@@ -1,6 +1,33 @@
 \# Validation Rules
 
+```mermaid
+flowchart TD
 
+UserAction
+
+UserAction --> CheckCustomerID
+UserAction --> CheckCylinderID
+UserAction --> CheckStatus
+UserAction --> CheckInvoice
+
+CheckCustomerID --> Valid
+
+CheckCylinderID --> Valid
+
+CheckStatus --> Valid
+
+CheckInvoice --> Valid
+
+Valid --> SaveData
+
+CheckCustomerID --> Error
+
+CheckCylinderID --> Error
+
+CheckStatus --> Error
+
+CheckInvoice --> Error
+```
 
 \## Customer Rules
 
