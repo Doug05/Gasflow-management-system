@@ -1,0 +1,13 @@
+*.py
+*.pyc
+__pycache__/
+*.db
+*.sqlite
+*.sqlite3
+.env
+config.json
+credentials.json
+secrets.json
+build/
+dist/
+*.exe
